@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik';
+}
+
+header {
+    padding: 2rem 0 6rem 0;
+    background-image: url('../../images/pattern-bg-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h1, ul {
+    text-align: center;
+}
+
+#ip-search {
+    border-radius: 1rem 0 0 1rem;
+    border: none;
+    padding: 1rem;
+    field-sizing: content;
+}
+
+button {
+    border-radius: 0rem 1rem 1rem 0rem;
+    border: none;
+    padding: 1rem;
+    background-color: black;
+}
+
+main {
+    border-radius: 1rem;
+    background-color: #fff;
+    position: absolute;
+    z-index: 2;
+    margin: auto;
+    padding: 1rem;
+    width: 90%;
+    top: 10rem;
+    right: 0;
+    left: 0;
+}
+
+li:nth-child(1n) {
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 59%);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.result {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 17%);
+}
+
+html, body {
+    height: 100%;
+}
+
+#map {
+    z-index: 1;
+    height: 80vh;
+}
+
+button:hover {
+    background-color: red;
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        background-image: url('../../images/pattern-bg-desktop.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    main {
+        max-width: fit-content;
+    }
+
+    ul {
+        display: flex;
+        text-align: start;
+    }
+
+    ul > li {
+        padding-right: 3rem;
+        border-right: 1px solid hsl(0, 0%, 59%);
+    }
+    
+    ul > li:last-child {
+        border: none;
+    }
+
+    li:nth-child(1n) {
+        padding-left: 1rem;
+    }
+
+    li:nth-child(2n) {
+        margin-left: 0rem;
+    }
+}
